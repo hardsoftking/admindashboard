@@ -1,0 +1,125 @@
+:root{
+  --hover-bg-icon: #2D3664;
+}
+
+#header{
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  background: rgba(37,43,59);
+  box-shadow: rgba(0,0,0,0.05) 1px 0px 20px;
+}
+.top-nav{
+  padding-top: 0;
+  padding-top: 0;
+  
+  
+}
+.cmn-top-nav_icon{
+  font-size: 2em;
+  position: relative;
+  padding: 0.3em;
+  text-align: center;
+}
+.cmn-top-nav_icon:hover{
+ /* background: rgba(0,0,0,0.2);*/
+  background: var(--hover-bg-icon);
+  border-radius: 4px;
+  
+}
+
+
+.user-profileIcon:hover, .flagIcon:hover{
+  background: var(--hover-bg-icon);
+}
+
+.btn_open-leftside-menu{
+  border: none;
+  background: none;
+}
+
+.btn_open-leftside-menu:hover{
+  
+}
+
+
+/*=== IconBox's common style ===*/
+.iconBox_common-style{
+  position: absolute;
+  color: black;
+  width: 96%;
+  background: #fff;
+  padding: 1em;
+  margin:0% 2%;
+  display: ;
+}
+
+/*=== Search Icon and Box ===*/
+
+.searchBox{
+  display: none;
+  padding-bottom: 3em;
+  border-radius: 4px;
+  box-shadow: 0px 2px 5px rgba(0,0,0,0.09);
+}
+.searchBox .searchInput{
+  height: 3em;
+  width: 90%;
+  
+}
+.searchBox .btn-submit-searchInput{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 10px;
+  border-radius: 3px;
+}
+.activeSearch{
+  display: flex;
+}
+
+/*==== Notification Icon and box style ====*/
+.notificationBox{
+  display: none;
+  box-shadow: 0px 2px 5px rgba(0,0,0,0.09);
+  border-radius: 4px;
+}
+.noti-top_red-dot{
+  width: 3px;
+  height: 3px;
+  padding: 3px;
+  background: red;
+  border-radius: 50%;
+  position: absolute;
+  margin-left: 2em;
+  margin-top:4px;
+  z-index: 14;
+}
+
+.notifiactionBox_header{
+  
+}
+ .notifiactionBox_body{
+  
+}
+.notifiactionBox_footer{
+  
+}
+.activeNotiBox{
+  display: block;
+}
+
+
+/*==== responsive design ====*/
+@media(min-width:768px){
+  
+  /*======= Search Icon and Box ========*/
+  .searchBox, .notificationBox{
+    width: 20em;
+    right:0 ;
+    margin-right: 11.6em;
+  }
+  
+  
+}
+
