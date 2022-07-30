@@ -87,7 +87,11 @@
   display: none;
 }
 .flag_item{
-  margin-bottom: 1em;
+  margin-bottom: 0.5em;
+  padding: 7px;
+}
+.flag_item:hover{
+  background: rgba(0,0,0,0.08);
 }
 .flag-item_img{
   height: 1.2em;
@@ -96,7 +100,7 @@
 .flag-item_name{
   margin: 0px 9px;
 }
-.showFlagBox{
+.activeFlagBox{
   display: block;
 }
 

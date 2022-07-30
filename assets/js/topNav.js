@@ -7,6 +7,7 @@ import removeLeftnav() from "./leftsideMenu.js"
  let flagIcon = document.body.querySelector(".flagIcon")
  let flagBox = document.body.querySelector(".flagBox")
  
+ 
 /*==== profile ====*/
  let profileIcon = document.body.querySelector(".user-profileIcon")
  let profileBox = document.body.querySelector(".profileBox")
@@ -84,6 +85,17 @@ import removeLeftnav() from "./leftsideMenu.js"
     }
    /*close notiBox when click inside the main-container*/ 
     closeBox(flagBox,"activeFlagBox")
+    
+    /* when click any flag_item, close the flagBox*/
+    let flagItem = document.body.querySelectorAll(".flag_item")
+    
+    var k 
+    for(k=0; k< flagItem.length; k++){
+      flagItem[k].addEventListener("click",()=>{
+        console.log("remove flagbox")
+        removeFlagBox()
+      })
+    }
     
     
    /*=====function for Toggle profileBox =====*/

@@ -25,10 +25,10 @@ mainContainer.addEventListener("click", ()=>{
 
 
 /*===== LINK ACTIVE  =====*/ 
-const linkColor = document.querySelectorAll('.left-nav__link')
+const linkColor = document.querySelectorAll('.a-link')
 function colorLink(){
-  linkColor.forEach(l=> l.classList.remove('active'))
-  this.classList.add('active')
+  linkColor.forEach(l=> l.classList.remove('activeLink'))
+  this.classList.add('activeLink')
 }
 linkColor.forEach(l=> l.addEventListener('click', colorLink))
 
@@ -73,7 +73,7 @@ for(j=0; j<collapseSubMenuLinks.length; j++){
 }
 
 
-/*=== no rotate when click form left nav link===*/
+/*=== no rotate when click from left nav link===*/
 let notRotate = document.body.querySelector(".not-rotate")
 let formBadge = document.body.querySelector(".formBadge")
 

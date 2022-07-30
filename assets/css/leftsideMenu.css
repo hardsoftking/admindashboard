@@ -50,7 +50,6 @@
   padding: 4px 3px;
   color: gray;
   font-size: 1.1em;
-  
 }
 .left-nav_link:hover{
   background: rgba(0,0,0,0.05);
@@ -124,7 +123,7 @@
 .showSubMenu{
   display: flex;
   flex-direction: column;
-a}
+}
 
 
 
@@ -135,4 +134,10 @@ a}
 
 .notRotate{
   transform: rotate(0deg) !important;
+}
+
+
+/*--- active link --*/
+.activeLink{
+  color: #5D69F9 !important;
 }
