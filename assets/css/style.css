@@ -7,9 +7,11 @@
 
 :root{
   --body-bg: rgb(239,243,346);
+  --body-bg-dark: black;
   --body-color: rgb(80,93,105);
   --body-font: "Nunito", sans-serif;
   --white: #E0E4E6;
+  --light-green:#1BC442;
 }
 
 /*===== BASE =====*/
@@ -24,10 +26,6 @@ ul{
   padding: 0;
 
 }
-a{
-  text-decoration: none;
-}
-
 a{
   text-decoration: none;
 }
@@ -79,32 +77,46 @@ a{
   
 }
 
-.card_percentage-wrapper{
- /* border:1px solid red;*/
+.card_footer{
   font-size: 12px;
-}
-.arrowIcon{
-  font-size: 12px;
-}
-.cmn-arrow-icon{
- /* border: 1px solid green;*/
-  
 }
 
-.card-1_rightside-icon,.card-2_rightside-icon,.card-3_rightside-icon,.card-4_rightside-icon{
+.card_footer p span{
+  color: var(--light-green);
+}
+
+.card-arrow-up_svg-icon,
+.card-arrow-down_svg-icon{
+  width: 1.2em;
+  height: 1.4em;
+}
+
+.card-arrow-up_svg-icon{
+  filter: invert(54%) sepia(45%) saturate(754%) hue-rotate(87deg) brightness(97%) contrast(88%);
+}
+.card-arrow-down_svg-icon{
+  filter: invert(19%) sepia(100%) saturate(6251%) hue-rotate(356deg) brightness(103%) contrast(109%);
+}
+
+
+.card-1_rightside-icon,
+.card-2_rightside-icon,
+.card-3_rightside-icon,
+.card-4_rightside-icon{
   border-radius: 7px;
   background: #E0E3F5;
 }
-.card-1_rightside-icon span, .card-3_rightside-icon span{
+
+.card-1_rightside-icon img, 
+.card-3_rightside-icon img{
   padding: 0.6em;
-  color: #268DFC;
-  font-weight: bolder;
+  filter: invert(46%) sepia(78%) saturate(2140%) hue-rotate(193deg) brightness(95%) contrast(115%);
   
 }
-.card-2_rightside-icon span, .card-4_rightside-icon span{
+.card-2_rightside-icon img, 
+.card-4_rightside-icon img{
   padding: 0.6em;
-  color: #088E2F ;
-  font-weight: bolder;
+  filter: invert(63%) sepia(52%) saturate(7347%) hue-rotate(111deg) brightness(98%) contrast(91%);;
 }
 
 
