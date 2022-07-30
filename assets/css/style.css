@@ -1,0 +1,133 @@
+
+*,::before,::after{
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+:root{
+  --body-bg: rgb(239,243,346);
+  --body-bg-dark: black;
+  --body-color: rgb(80,93,105);
+  --body-font: "Nunito", sans-serif;
+  --white: #E0E4E6;
+  --light-green:#1BC442;
+}
+
+/*===== BASE =====*/
+input:focus, textarea:focus{
+  outline: none;
+}
+h1{
+  margin: 0;
+}
+ul{
+  margin: 0;
+  padding: 0;
+
+}
+a{
+  text-decoration: none;
+}
+
+
+/*--style for google matetial icons--*/
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 200,
+  'GRAD' 0,
+  'opsz' 20
+}
+/*--End style for google matetial icons--*/
+
+
+#body{
+  background: var(--body-bg);
+  color: var(--body-color);
+  font-family: var(--body-font);
+  font-size: 12.96px;
+  font-weight: 400;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-right: 0px;
+  margin-left: 0px;
+}
+
+#main-container{
+  margin: 1em auto;
+  padding: 7em 0em;
+  height: 100%;
+  width: 97%;
+  max-width: 990px;
+  
+}
+
+
+/*---- Dashboard-cards styles---*/
+.dashboard_cards-container{
+ 
+}
+.card-wrapper{
+  padding: 1.4em 1em;
+  margin: 1.2em ;
+  box-shadow: 0px 1px 2px rgba(0,0,0,0.1);
+  border-radius: 4px;
+  background: #fff;
+  
+}
+
+.card_footer{
+  font-size: 12px;
+}
+
+.card_footer p span{
+  color: var(--light-green);
+}
+
+.card-arrow-up_svg-icon,
+.card-arrow-down_svg-icon{
+  width: 1.2em;
+  height: 1.4em;
+}
+
+.card-arrow-up_svg-icon{
+  filter: invert(54%) sepia(45%) saturate(754%) hue-rotate(87deg) brightness(97%) contrast(88%);
+}
+.card-arrow-down_svg-icon{
+  filter: invert(19%) sepia(100%) saturate(6251%) hue-rotate(356deg) brightness(103%) contrast(109%);
+}
+
+
+.card-1_rightside-icon,
+.card-2_rightside-icon,
+.card-3_rightside-icon,
+.card-4_rightside-icon{
+  border-radius: 7px;
+  background: #E0E3F5;
+}
+
+.card-1_rightside-icon img, 
+.card-3_rightside-icon img{
+  padding: 0.6em;
+  filter: invert(46%) sepia(78%) saturate(2140%) hue-rotate(193deg) brightness(95%) contrast(115%);
+  
+}
+.card-2_rightside-icon img, 
+.card-4_rightside-icon img{
+  padding: 0.6em;
+  filter: invert(63%) sepia(52%) saturate(7347%) hue-rotate(111deg) brightness(98%) contrast(91%);;
+}
+
+
+
+
+
+/*-----👇 Start footer section ----*/
+   .footer{
+     /*position: fixed ;*/
+     bottom: ;
+   }
+/*----- End footer section 👆----*/
+
+

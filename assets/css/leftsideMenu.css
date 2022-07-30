@@ -1,0 +1,138 @@
+
+/*======== start =========*/
+/*===== GOOGLE FONTS =====*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+
+/*===== VARIABLES CSS =====*/
+:root{
+  --nav-width: 22em;
+
+  /*===== Colores =====*/
+  --first-color: #0C5DF4;
+  --nav-bg-color: #FDFDFF;
+  --black-color: black;
+  --white-color: #FFF;
+  --text-muted: gray;
+  /*===== Fuente y tipografia =====*/
+  --body-font: 'Poppins', sans-serif;
+  --normal-font-size: 1rem;
+  --small-font-size: .875rem;
+  
+  /*===== z index =====*/
+  --z-fixed: 100;
+}
+
+/*===== left NAV =====*/
+.left-navbar{
+  position: fixed;
+  overflow-y: scroll;
+  left: 0;
+  width: var(--nav-width);
+  height: 100vh;
+  background-color: var(--nav-bg-color);
+  color: black;
+  padding: 1.5rem 1.5rem 0rem;
+  transition: .5s;
+  z-index: var(--z-fixed);
+  display: none ;
+  
+}
+.show_left-navbar{
+  display: block;
+}
+
+.left-nav{
+  padding-bottom: 7em;
+}
+
+.left-nav_link{
+  margin-bottom: 4px;
+  padding: 4px 3px;
+  color: gray;
+  font-size: 1.1em;
+  
+}
+.left-nav_link:hover{
+  background: rgba(0,0,0,0.05);
+}
+
+.sidebar_svg-icon{
+  width: 1.1em;
+  height: 1.1em;
+  filter: invert(50%) sepia(7%) saturate(591%) hue-rotate(193deg) brightness(90%) contrast(98%); 
+}
+
+/*=== Collapse ===*/
+.collaps_c{
+  
+}
+
+.collaps_link{
+  margin-bottom: 4px;
+  padding: 4px 3px;
+  color: gray;
+  font-size: 1.1em;
+  align-items: center;
+}
+
+.collaps_link:hover{
+  background: rgba(0,0,0,0.05);
+}
+
+.collaps_menu{
+  display: none;
+  padding: 4px;
+  margin-left: 17px;
+}
+
+.collaps_menu a{
+  color: gray;
+  margin-bottom: 7px;
+  font-size: 1.1em;
+}
+.collaps_menu div{
+  color:;
+  margin-bottom: 4px;
+  font-size: ;
+}
+
+.showCollaps{
+  display: flex;
+  flex-direction: column;
+}
+
+/*=== submenu ===*/
+.collaps_submenu{
+  color: gray;
+  font-size: 1.1em;
+  align-items: center;
+}
+.collaps-submenu_link{
+  margin-left: 1.2em;
+  display: none;
+}
+
+.collaps-submenu_link a{
+  color: gray;
+  margin-bottom: 0.5em;
+  font-size: 1.1em;
+}
+.collaps-submenu_link a:first-child{
+  margin-top: 3px;
+}
+
+.showSubMenu{
+  display: flex;
+  flex-direction: column;
+a}
+
+
+
+/*Rotate icon*/
+.rotate{
+  transform: rotate(180deg);
+}
+
+.notRotate{
+  transform: rotate(0deg) !important;
+}

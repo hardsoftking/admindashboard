@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Admin Dashboard </title>
+    
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/header.css">
+    <link rel="stylesheet" href="./assets/css/leftsideMenu.css">
+    <link rel="stylesheet" href="./assets/css/modeSwitcher.css">
+
+   	<script src="./assets/js/bootstrap.bundle.min.js"></script>
+  </head>
+  <body id="body">
+    <!---👇 Start Header Section --->
+     <header id="header" class="">
+      <nav class="top-nav py-2 px-2 d-flex align-items-center justify-content-between"> 
+        <div class="d-flex gap-4 align-items-center justify-content-center">
+           <div class="logo">
+             <img class="" src="./assets/img/logo/logo-sm.png"/>
+           </div>
+           <button class="btn_open-leftside-menu openMenu cmn-top-nav_icon d-flex text-light">
+              <img class="topnav_svg-icon" src="../assets/img/topbar/menu-2-fill.svg" alt=""/>
+           </button>
+        </div>
+        <div class="topnav-right d-flex align-items-center text-light gap-3 pe-2">
+          <!--=== Search icon ===-->
+          <div class="searchIcon cmn-top-nav_icon">
+            <img class="topnav_svg-icon" src="../assets/img/topbar/search-line.svg" alt=""/>
+          </div>
+          
+        <!--=== Nation flag icon ===-->
+            <div class="flagIcon cmn-top-nav_icon d-none d-md-flex " >
+              <img width="36" height="22" class="rounded " src="./assets/img/flag/us.jpg"/>
+            </div>
+
+         <!--=== Notification icon ===-->
+          <div class="notificationIcon cmn-top-nav_icon"> 
+            <span class="noti-top_red-dot"></span>
+            <img class="topnav_svg-icon" src="../assets/img/topbar/notification-4-line.svg" alt=""/>
+          </div>
+          
+         <!--=== User profile icon ===-->
+          <div class="user-profileIcon cmn-top-nav_icon">
+            <img width="35" height="35" class=" rounded-circle border border-3 " src="./assets/img/user/avatar-1.jpg"/>
+          </div>
+          
+         <!--=== Setting icon ===-->
+          <div class="settingIcon cmn-top-nav_icon">
+            <img class="topnav_svg-icon" src="../assets/img/topbar/settings-2-line.svg" alt=""/>
+           </div>
+          <!--=== End setting ===-->
+        </div>
+       </nav>
+       
+      <!--👇 Start leftside Menu -->
+      <div class="left-navbar" id="left-navbar">
+        <nav class="left-nav">
+          <div>
+             <!-- Menu header---👇>
+              <!-- User details👇 --->
+             <div class="menue-header_user-profile text-center mt-3 ">
+                 <div class="">
+                   <img width="70" height="70" class=" rounded-circle" src="./assets/img/user/avatar-1.jpg" alt="julia hudda" />
+                 </div>
+                 <div class="my-2">
+                   <h4 class="fs-6 ">Julia Hudda</h3>
+                   <span class="text-muted fw-light">
+                      <i class="ri-record-circle-line align-middle fs-6 text-success "></i>
+                      Online
+                    </span>
+                  </div>
+                </div>
+            <!--👇 Start Menu Body --->
+              <div>
+                <div class="text-muted fw-bold mt-4 mb-2">
+                   MENU
+                </div>
+                <div class=" pb-3">
+                <!-- Start link 1 --->
+                  <div class="left-nav_link d-flex justify-content-between">
+                     <div class=" d-flex align-items-center">
+                       <img class="sidebar_svg-icon" src="../assets/img/sidebar-icons/dashboard-line.svg" alt=""/>
+                       <span class="mx-2">Dashboard</span>
+                     </div>
+                     <div class="badge bg-success text-light opacity-75 fw-extrabold rounded-circle">3</div>
+                   </div>
+                   
+                <!-- Start link 2 --->
+                  <div class="left-nav_link d-flex justify-content-between">
+                     <div class="d-flex align-items-center">
+                       <img class="sidebar_svg-icon" src="../assets/img/sidebar-icons/calendar-2-line.svg" alt=""/>
+                       <span class="mx-2">Calendar</span>
+                     </div>
+                  </div>
+                  
+                 <!-- Start link 3 --->           
+                  <div class="collaps_c">
+                    <div class="d-flex justify-content-between collaps_link">
+                     <div class="d-flex align-items-center">
+                       <img class="sidebar_svg-icon" src="../assets/img/sidebar-icons/mail-send-line.svg" alt=""/>
+                        <span class="mx-2">Email</span>
+                      </div>
+                      <img class="sidebar_svg-icon" src="../assets/img/sidebar-icons/arrow-down-s-line.svg" alt=""/>
+                    </div>
+                    <ul class="collaps_menu ">
+                      <a href="#">Inbox</a>
+                      <a href="#">Read Email</a>
+                    </ul>
+                  </div>
+               
+                 <!-- Start link 4 --->           
+                  <div class="collaps_c">
+                    <div class="d-flex justify-content-between collaps_link">
+                     <div class="d-flex align-items-center">
+                       <img class="sidebar_svg-icon" src="../assets/img/sidebar-icons/layout-line.svg" alt=""/>
+                        <span class="mx-2">Layouts</span>
+                      </div>
+                      <img class="sidebar_svg-icon" src="../assets/img/sidebar-icons/arrow-down-s-line.svg" alt=""/>
+                    </div>
+                    <ul class="collaps_menu "> 
+                     <!-- Start sub link 1--->
+                      <div class="text-muted ">
+                        <div class="collaps_submenu d-flex">
+                          <span>Vertical</span> 
+
+                          <img class="sidebar_svg-icon" src="../assets/img/sidebar-icons/arrow-down-s-line.svg" alt=""/>
+                        </div>
+                        <ul class="collaps-submenu_link">
+                           <a href="#">Dark Sidebar</a>
+                           <a href="#">Compact Sidebar</a>
+                           <a href="#">Icon Sidebar</a>
+                           <a href="#">Boxed Layout</a>
+                           <a href="#">Preloader</a>
+                           <a href="#">Colored Sidebar</a>
+                        </ul>
+                      </div>
+                     <!-- Start sub link 2--->
+                      <div class="text-muted margin_link">
+                        <div class="collaps_submenu d-flex">
+                          <span>Horizontal</span> 
+                          <img class="sidebar_svg-icon" src="../assets/img/sidebar-icons/arrow-down-s-line.svg" alt=""/>
+                        </div>
+                        <ul class="collaps-submenu_link">
+                           <a href="#">Horizontal</a>
+                           <a href="#">Topbar light</a>
+                           <a href="#">Boxed width</a>
+                           <a href="#">Preloader</a>
+                           <a href="#">Colored Header</a>
+                        </ul>
+                      </div> <!-- 👆 end sublink 2 --->
+                    </ul>
+                  </div>
+                   
+                  <div class="my-2 text-muted fw-bold">
+                     Pages
+                  </div>
+                <!-- Start link 5 --->
+                  <div class="collaps_c">
+                    <div class="d-flex justify-content-between collaps_link">
+                      <div class="d-flex align-items-center">
+                        <img class="sidebar_svg-icon" src="../assets/img/sidebar-icons/user-3-line.svg" alt=""/>
+                        <span class="mx-2">Authentication</span>
+                      </div>
+                      <img class="sidebar_svg-icon" src="../assets/img/sidebar-icons/arrow-down-s-line.svg" alt=""/>
+                    </div>
+                    <ul class="collaps_menu ">
+                      <a href="#">Login</a>
+                      <a href="#">Register</a>
+                      <a href="#">Recover Password</a>
+                      <a href="#">Lock Screen</a>
+                    </ul>
+                  </div>
+                
+                <!-- Start link 6 --->
+                  <div class="collaps_c">
+                    <div class="d-flex justify-content-between collaps_link">
+                      <div class="d-flex align-items-center">
+                        <img class="sidebar_svg-icon" src="../assets/img/sidebar-icons/profile-line.svg" alt=""/>
+                        <span class="mx-2">Utility</span>
+                      </div>
+                      <img class="sidebar_svg-icon" src="../assets/img/sidebar-icons/arrow-down-s-line.svg" alt=""/>
+                    </div>
+                    <ul class="collaps_menu ">
+                      <a href="#">Starter</a>
+                      <a href="#">Timeline</a>
+                      <a href="#">Directory</a>
+                      <a href="#">Invoice</a>
+                      <a href="#">Error 404</a>
+                      <a href="#">Error 505</a>
+                    </ul>
+                  </div>
+                
+                  <div class="my-2 text-muted fw-bold">
+                     Components
+                  </div>
+                <!-- Start link 7 --->
+                  <div class="collaps_c">
+                    <div class="d-flex justify-content-between collaps_link">
+                      <div class="d-flex align-items-center">
+                        <img class="sidebar_svg-icon" src="../assets/img/sidebar-icons/pencil-ruler-2-line.svg" alt=""/>
+                        <span class="mx-2">Ui Elements </span>
+                      </div>
+                      <img class="sidebar_svg-icon" src="../assets/img/sidebar-icons/arrow-down-s-line.svg" alt=""/>
+                    </div>
+                    <ul class="collaps_menu ">
+                      <a href="#">Alerts</a>
+                      <a href="#">Buttons</a>
+                      <a href="#">Cards</a>
+                      <a href="#">Carousel </a>
+                      <a href="#">Dropdowns</a>
+                      <a href="#">Grid</a>
+                      <a href="#">Images</a>
+                      <a href="#">Lightbox</a>
+                      <a href="#">Modals</a>
+                      <a href="#">Offcavas</a>
+                      <a href="#">Progress Bars</a>
+                      <a href="#">Tabs & Accordions</a>
+                      <a href="#">Typography</a>
+                      <a href="#">Video </a>
+                      <a href="#">General </a>
+                    </ul>
+                  </div>
+                  
+                <!-- Start link 8 --->
+                  <div class="collaps_c">
+                    <div class="d-flex justify-content-between collaps_link">
+                      <div class="d-flex align-items-center">
+                        <img class="sidebar_svg-icon" src="../assets/img/sidebar-icons/vip-crown-2-line.svg" alt=""/>
+                        <span class="mx-2">Advanced Ui</span>
+                      </div>
+                      <img class="sidebar_svg-icon" src="../assets/img/sidebar-icons/arrow-down-s-line.svg" alt=""/>
+                    </div>
+                    <ul class="collaps_menu ">
+                      <a href="#">Range Slider</a>
+                      <a href="#">Round Slider</a>
+                      <a href="#">Session Timeout</a>
+                      <a href="#">Sweetalert 2</a>
+                      <a href="#">Rating</a>
+                      <a href="#">Notifications</a>
+                    </ul>
+                  </div>
+                
+                <!-- Start link 9 --->
+                  <div class="collaps_c">
+                    <div class="d-flex justify-content-between collaps_link not-rotate">
+                      <div class="d-flex align-items-center">
+                        <img class="sidebar_svg-icon" src="../assets/img/sidebar-icons/eraser-fill.svg" alt=""/>
+                        <span class="mx-2">Forms</span>
+                      </div>
+                     <div class="badge bg-danger text-light opacity-75 fw-extrabold rounded-circle formBadge ">8</div>
+                    </div>
+                    <ul class="collaps_menu ">
+                      <a href="#">Form Elements </a>
+                      <a href="#">Form Validation</a>
+                      <a href="#">Form Advanced Plugins</a>
+                      <a href="#">Form Editors</a>
+                      <a href="#">Form File Upload</a>
+                      <a href="#">Form X-editable</a>
+                      <a href="#">Form Wizard</a>
+                      <a href="#">Form Mask</a>
+                    </ul>
+                  </div>
+                
+                <!-- Start link 10 --->
+                  <div class="collaps_c">
+                    <div class="d-flex justify-content-between collaps_link">
+                      <div class="d-flex align-items-center">
+                        <img class="sidebar_svg-icon" src="../assets/img/sidebar-icons/table-2.svg" alt=""/>
+                        <span class="mx-2">Tables</span>
+                      </div>
+                      <img class="sidebar_svg-icon" src="../assets/img/sidebar-icons/arrow-down-s-line.svg" alt=""/>
+                    </div>
+                    <ul class="collaps_menu ">
+                      <a href="#">Basic Tables</a>
+                      <a href="#">Data Tables</a>
+                      <a href="#">Responsive Table</a>
+                      <a href="#">Editable Tsble</a>
+                    </ul>
+                  </div>
+                
+                <!-- Start link 11 --->
+                  <div class="collaps_c">
+                    <div class="d-flex justify-content-between collaps_link">
+                      <div class="d-flex align-items-center">
+                        <img class="sidebar_svg-icon" src="../assets/img/sidebar-icons/bar-chart-line.svg" alt=""/>
+                        <span class="mx-2">Charts</span>
+                      </div>
+                      <img class="sidebar_svg-icon" src="../assets/img/sidebar-icons/arrow-down-s-line.svg" alt=""/>
+                    </div>
+                    <ul class="collaps_menu ">
+                      <a href="#">Apex Charts</a>
+                      <a href="#">Chartjs Charts</a>
+                      <a href="#">Float Charts</a>
+                      <a href="#">Jquery Knob Charts</a>
+                      <a href="#">Sparkline Charts</a>
+                    </ul>
+                  </div>
+                
+                <!-- Start link 12 --->
+                  <div class="collaps_c">
+                    <div class="d-flex justify-content-between collaps_link">
+                      <div class="d-flex align-items-center">
+                        <img class="sidebar_svg-icon" src="../assets/img/sidebar-icons/brush-line.svg" alt=""/>
+                        <span class="mx-2">Icons</span>
+                      </div>
+                      <img class="sidebar_svg-icon" src="../assets/img/sidebar-icons/arrow-down-s-line.svg" alt=""/>
+                    </div>
+                    <ul class="collaps_menu ">
+                      <a href="#">Remix Icons</a>
+                      <a href="#">Material Design</a>
+                      <a href="#">Dripicons</a>
+                      <a href="#">Font Awesome 5</a>
+                    </ul>
+                  </div>
+                
+                <!-- Start link 13 --->
+                  <div class="collaps_c">
+                    <div class="d-flex justify-content-between collaps_link">
+                      <div class="d-flex align-items-center">
+                        <img class="sidebar_svg-icon" src="../assets/img/sidebar-icons/map-pin-line.svg" alt=""/>
+                        <span class="mx-2">Maps</span>
+                      </div>
+                      <img class="sidebar_svg-icon" src="../assets/img/sidebar-icons/arrow-down-s-line.svg" alt=""/>
+                    </div>
+                    <ul class="collaps_menu ">
+                      <a href="#">Google Maps</a>
+                      <a href="#">Vector Maps</a>
+                    </ul>
+                  </div>
+                
+                <!-- Start link 14 --->
+                  <div class="collaps_c">
+                    <div class="d-flex justify-content-between collaps_link">
+                      <div class="d-flex align-items-center">
+                        <img class="sidebar_svg-icon" src="../assets/img/sidebar-icons/share-line.svg" alt=""/>
+                        <span class="mx-2">Multi Level</span>
+                      </div>
+                      <img class="sidebar_svg-icon" src="../assets/img/sidebar-icons/arrow-down-s-line.svg" alt=""/>
+                    </div>
+                    <ul class="collaps_menu "> 
+                     <!-- Start sub link 1--->
+                      <a href="#">Level 1.1</a> 
+                     <!-- Start sub link 2-->
+                      <div class="text-muted margin_link">
+                        <div class="collaps_submenu d-flex align-items-center">
+                          <span>Level 1.2</span> 
+                          <img class="sidebar_svg-icon" src="../assets/img/sidebar-icons/arrow-down-s-line.svg" alt=""/>
+                        </div>
+                        <ul class="collaps-submenu_link">
+                           <a href="#">Level 2.1</a>
+                           <a href="#">Level 2.2</a>
+                        </ul>
+                      </div> <!-- 👆 end sublink 2 --->
+                    </ul>
+                  </div>
+                   
+                
+                </div>
+             </div>
+            <!-- End Menu Body👆 --->
+            </div>
+          </nav>
+        </div>
+      <!---End leftside Menu 👆 ----->
+       
+       <!--===👇 Search Box ===-->
+           <div class="searchBox iconBox_common-style">
+              <input class="searchInput px-2" id="search" placeholder="Search" type="text"/> 
+              <div class="btn-submit-searchInput text-light bg-primary ">
+                <img src="../assets/img/search-line.svg" class="py-1 px-2 cmn-top-nav_icon"></img>
+              </div>
+           </div>
+       <!-- === End Search Box👆 ===-->
+        
+       <!-- ===👇 Start notification Box ===-->
+         <div class="notificationBox iconBox_common-style">
+            <div class="notiBox_header d-flex justify-content-between">
+              <h4 class="notiBox_header_title">Notification</h4>
+              <div class="notiBox_header_sub-title text-primary fw-lighter ">View All</div>
+            </div>
+            <div class="notiBox_body"> 
+            
+               <!-- Start Notification Body card 1-->
+               <div class="notiBox_body_card">
+                 <div class="shopping_cart_svg">
+                   <img class="" src="../assets/img/dashboard-card/shopping-cart-2-line.svg" alt="user"/>
+                 </div>
+                 <!-- Start Notification body card right content-->
+                 <div class="notiBox_body_card_right-content">
+                   <h4 class="notiBox_body_card_right-content_title">
+                     Your Order is placed
+                   </h4>
+                   <div class="notiBox_body_card_right-content_sub-title">
+                      If several language coalesce the grammar
+                   </div>
+                   <div class="notiBox_body_card_right-content_createdAt">
+                      <img src="../assets/img/time-line.svg"/>
+                      <span> 3 min ago</span>
+                   </div>
+                 </div><!-- end noti card right content-->
+               </div><!--End notification body card 1-->
+               
+               <!-- Start Notification Body card 2-->
+               <div class="notiBox_body_card">
+                 <img class="notiBox_body_card_img" src="../assets/img/user/avatar-3.jpg" alt="user"/>
+                 <!-- Start Notification body card right content-->
+                 <div class="notiBox_body_card_right-content">
+                   <h4 class="notiBox_body_card_right-content_title">
+                     James Lemire
+                   </h4>
+                   <div class="notiBox_body_card_right-content_sub-title">
+                      I will seem like simplified English.
+                   </div>
+                   <div class="notiBox_body_card_right-content_createdAt">
+                      <img src="../assets/img/time-line.svg"/>
+                      <span> 1 hours ago </span>
+                   </div>
+                 </div><!-- end noti card right content-->
+               </div><!--End notification body card 2-->
+               
+               <!-- Start Notification Body card 3-->
+               <div class="notiBox_body_card">
+                 <div class="checkbox_svg">
+                   <img class="" src="../assets/img/checkbox-circle-line.svg" alt="user"/>
+                 </div>
+                 <!-- Start Notification body card right content-->
+                 <div class="notiBox_body_card_right-content">
+                   <h4 class="notiBox_body_card_right-content_title">
+                     Your item is shipped
+                   </h4>
+                   <div class="notiBox_body_card_right-content_sub-title">
+                     If several language coalesce the grammar
+                   </div>
+                   <div class="notiBox_body_card_right-content_createdAt">
+                      <img src="../assets/img/time-line.svg"/>
+                      <span> 3 min ago</span>
+                   </div>
+                 </div><!-- end noti card right content-->
+               </div><!--End notification body card 3-->
+               
+               <!-- Start Notification Body card 4-->
+               <div class="notiBox_body_card">
+                 <img class="notiBox_body_card_img" src="../assets/img/user/avatar-4.jpg" alt="user"/>
+                 <!-- Start Notification body card right content-->
+                 <div class="notiBox_body_card_right-content">
+                   <h4 class="notiBox_body_card_right-content_title">
+                    Salena Layfield
+                   </h4>
+                   <div class="notiBox_body_card_right-content_sub-title">
+                      Ask a skeptical Cambridge friend of mine Occidental.
+                   </div>
+                   <div class="notiBox_body_card_right-content_createdAt">
+                      <img src="../assets/img/time-line.svg"/>
+                      <span> 1 hours ago</span>
+                   </div>
+                 </div><!-- end noti card right content-->
+               </div><!--End notification body card 4-->
+              
+            </div>
+            <div class="notiBox_footer">
+               <a href="#" class="notiBox_footer_link text-primary">
+                  <img src="../assets/img/arrow-right-circle-line.svg" alt=" "/>
+                  <span class="mx-1">View More...</span>
+               </a>
+            </div>
+         </div>
+       <!-- === End notification Box👆 ===-->
+       
+       <!-- ===👇 Start flags Box ===--> 
+        <div class="flagBox">
+          <!-- === Flag item_1 ===--> 
+          <div class="flag_item">
+            <img class="flag-item_img" src="../assets/img/flag/spain.jpg" alt="Spanish"/> 
+            <span class="flag-item_name">Spain</span>
+          </div>
+          
+          <!-- === Flag item_2 ===--> 
+          <div class="flag_item">
+            <img class="flag-item_img" src="../assets/img/flag/germany.jpg " alt="Germany"/> 
+            <span class="flag-item_name"> Germany </span>
+          </div>
+          
+          <!-- === Flag item_3 ===--> 
+          <div class="flag_item">
+            <img class="flag-item_img" src="../assets/img/flag/italy.jpg " alt="Italy"/> 
+            <span class="flag-item_name"> Italy </span>
+          </div> <!-- End flag item_3-->
+          
+          <!-- === Flag item_4 ===--> 
+          <div class="flag_item">
+            <img class="flag-item_img" src="../assets/img/flag/russia.jpg " alt="Russia"/> 
+            <span class="flag-item_name">Russia </span>
+          </div> <!-- End flag item_4-->
+        </div>
+       <!-- === End Flags Box👆 ===-->
+       
+       <!-- ===👇 Start UserProfile Box ===--> 
+        <div class="profileBox iconBox_common-style">
+          <!-- Profile Item_1 -->
+          <div class="profile-item">
+            <img class="profile-item_img" src="../assets/img/sidebar-icons/user-3-line.svg" alt="profile"/>
+            <span class="profile-item_name">Profile</span>
+          </div>
+          
+          <!-- Profile Item_2 -->
+          <div class="profile-item">
+            <img class="profile-item_img" src="../assets/img/sidebar-icons/user-3-line.svg" alt="profile"/>
+            <span class="profile-item_name">My Wallet</span>
+          </div>
+          
+          <!-- Profile Item_3 -->
+          <div class="profile-item align-items-center justify-content-between">
+            <div class="d-flex"> 
+              <img class="profile-item_img" src="../assets/img/sidebar-icons/user-3-line.svg" alt="profile"/>
+              <span class="profile-item_name">Settings</span>
+            </div>
+            <div class="badge badge_green">
+              11
+            </div>
+          </div>
+          
+          <!-- Profile Item_4 -->
+          <div class="profile-item">
+            <img class="profile-item_img" src="../assets/img/sidebar-icons/user-3-line.svg" alt="profile"/>
+            <span class="profile-item_name">Lock Screen</span>
+          </div><!--end profile item-4-->
+          
+          <!-- Profile Footer -->
+          <div class="profile-footer">
+            <a href="#" class="profile-footer_logout">
+              <img src="../assets/img/sidebar-icons/user-3-line.svg" alt=""/>
+              <span>Logout</span>
+            </a>
+          </div><!-- End profile footer-->
+        </div>
+       <!-- === End UserProfile Box👆 ===-->
+      
+       <!-- ===👇👇👇 Start RightSidebar / SettingBox 👇👇👇===--> 
+        <div class="right-sidebar_overlay setting-container" onclick="removeSettingBox()">
+          <div class="settingBox float-end">
+            <div class="setting-header">
+              <h4 class="setting-header_title">
+                Settings
+              </h4>
+              <span class="btn-close" onclick="removeSettingBox()"></span>
+            </div> 
+         
+            <div class="setting-body">
+               <div class="setting-body_title">
+                 Chose Layouts
+               </div>
+              <!-- Start setting item 1-->
+              <div class="setting-body_item">
+                <img class="setting-body_item_img" src="../assets/img/layouts/layout-1.jpg" alt="light-mode"/>
+                <div class="setting-body_item_footer">
+                   <label class="switch">
+                      <input type="checkbox">
+                      <span class="slider round"></span>
+                    </label> 
+                    <span>Light Mode</span>
+                </div>
+              </div><!-- End setting item 1-->
+              
+              <!-- Start setting item 2-->
+              <div class="setting-body_item">
+                <img class="setting-body_item_img" src="../assets/img/layouts/layout-2.jpg" alt="light-mode"/>
+                <div class="setting-body_item_footer darkMode">
+                   <label class="switch ">
+                      <input type="checkbox">
+                      <span class="slider round"></span>
+                    </label> 
+                    <span>Dark Mode</span>
+                </div>
+              </div><!-- End setting item 2-->
+           
+              <!-- Start setting item 3-->
+              <div class="setting-body_item">
+                <img class="setting-body_item_img" src="../assets/img/layouts/layout-3.jpg" alt="light-mode"/>
+                <div class="setting-body_item_footer">
+                   <label class="switch">
+                      <input type="checkbox">
+                      <span class="slider round"></span>
+                    </label> 
+                    <span>RTL Mode</span>
+                </div>
+              </div><!-- End setting item 3-->
+              
+            </div><!-- end setting Body-->
+          </div><!-- end settingBox-->
+        </div>
+       <!-- === 👆👆👆 End RightSidebar 👆👆👆 ===-->
+       
+     </header>
+    <!--- End Header Section 👆--->
+    
+    <!---👇 Start Main Section --->
+     <section id="main-container" class="container-100">
+       <!---👇 Start Dashboard Cards --->
+       <div class="=dashboard container-100 ">
+         <div class="dashboard-header mx-3 d-md-flex justify-content-between ">
+           <div class="fs-5 fw-bold">Dashboard</div>
+           <div style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a class="fw-bolder text-muted " href="#">Home</a></li>
+              <li class="breadcrumb-item fw-light" aria-current="page">Library</li>
+             </ol>
+           </div>
+         </div> 
+     <!--- 👇 Start dashboard_cards-container --->
+         <div class="dashboard_cards-container container-100">
+          <div class="d-md-flex justify-content-between ">
+          <!------👇 Card_1 Start ------>
+           <div class="card-wrapper flex-md-grow-1 bg-light d-flex justify-content-between align-items-center ">
+             <div class="card-leftside">
+               <div class="total-sales-title text-muted mb-1 fs-6 fw-light">
+                 Total Sales
+               </div>
+               <h4 class="total-sales fw-normal">1452</h4>
+               <div class="card_footer d-flex align-items-center">
+                 <p class="text-muted mb-0"> <span class="arrowIcon fw-normal me-2 "> <img class="card-arrow-up_svg-icon" src="../assets/img/dashboard-card/arrow-right-up-line.svg"></img> 9.23% </span> from previous period</p>
+               </div>             
+             </div>
+             <div class="card-1_rightside-icon ">
+                 <img class="svg-c-color" src="../assets/img/dashboard-card/shopping-cart-2-line.svg" alt="Shoping Cart"/>
+             </div>
+           </div>
+          <!------End Card_1 👆 ------>
+          <!------👇 Card_2 Start ------>
+           <div class="card-wrapper flex-md-grow-1 bg-light d-flex justify-content-between align-items-center ">
+             <div> 
+               <div class="new-orders-title text-muted mb-1 fs-6 fw-light">
+                 New Orders
+               </div>
+               <h4 class="new-orders fw-normal">938</h4>
+               <div class="card_footer d-flex align-items-center">
+                 <p class="text-muted mb-0"> <span class="arrowIcon text-danger fw-normal me-2 "> <img class="card-arrow-down_svg-icon" src="../assets/img/dashboard-card/arrow-right-down-line.svg"></img> 1.09% </span> from previous period</p>
+               </div>
+             </div>
+             <div class="card-2_rightside-icon ">
+                 <img src="../assets/img/dashboard-card/money-dollar-circle-line.svg" alt="Shoping Cart"/>
+             </div>            
+           </div>
+           <!------End Card_2 👆------>        
+          </div>
+          <div class="d-md-flex justify-content-between ">
+           <!------👇 Card_3 Start ------>
+           <div class="card-wrapper flex-md-grow-1 bg-light d-flex justify-content-between align-items-center ">
+             <div>
+               <div class="new-users-title text-muted mb-1 fs-6 fw-light">
+                 New Users
+               </div>
+               <h4 class="new-users fw-normal">8246</h4>
+               <div class="card_footer d-flex align-items-center">
+                 <p class="text-muted mb-0"> <span class="arrowIcon fw-normal me-2 "> <img class="card-arrow-up_svg-icon" src="../assets/img/dashboard-card/arrow-right-up-line.svg"></img> 16.2% </span> from previous period</p>
+               </div>
+             </div>
+             <div class="card-3_rightside-icon ">
+                 <img src="../assets/img/dashboard-card/account-circle-line.svg" alt="Shoping Cart"/>
+             </div>             
+           </div>
+           <!------End Card_3 👆 ------>           
+           <!------👇 Card_4 Start  ------>           
+           <div class="card-wrapper flex-md-grow-1 bg-light d-flex justify-content-between align-items-center  "> 
+             <div>
+               <div class="unique-visitors-title text-muted mb-1 fs-6 fw-light">
+                 Unique Visitors
+               </div>
+               <h4 class="unique-visitors fw-normal">29670</h4>
+               <div class="card_footer d-flex align-items-center">
+                 <p class="text-muted mb-0"> <span class=" fw-normal me-2 "> <img class="card-arrow-up_svg-icon" src="../assets/img/dashboard-card/arrow-right-up-line.svg"></img> 11.7% </span> from previous period</p>
+               </div>
+             </div>
+             <div class="card-4_rightside-icon ">
+                 <img class="text-success" src="../assets/img/dashboard-card/bit-coin-line.svg" alt="Shoping Cart"/>
+             </div>             
+           </div>
+           <!------End Card_4 👆------>
+          </div>
+         </div>
+        <!--- End  dashboard_cards-container 👆 --->
+       </div>
+      <!---  End Dashboard Cards👆 --->
+    
+    
+      <!---👇 Start Charts Container 👇 --->
+      
+          <!--- right code here -->
+          <!--- right code here -->
+          <!--- right code here -->
+          
+      <!--- 👆 End  Charts Container 👆--->
+    
+    
+     </section>
+   <!---End Main Section 👆 --->
+   
+   <!--- 👇 Start Footer section  --->
+     <footer class="footer bg-light w-100 p-3 d-flex justify-content-between ">
+       <div class="footer_leftside ">
+         <span class="text-muted ">
+           2022 © hardsoftking
+         </span>
+       </div>
+       <div class="footer_rightside ">
+         <span class="text-muted">
+           Crafted with ❤️ by 
+           <a href="#hardsoftking"> Hardsoftking </a>
+         </span>
+       </div>
+     </footer>
+    <!--- End Footer section 👆----->
+      
+      
+      
+      
+   <!---👇 Javascript files links --->
+       <!-- ===== IONICONS ===== -->
+      	<script src="./assets/js/index.js"></script>
+      	<script src="./assets/js/leftSideMenu.js"></script>
+      	<script src="./assets/js/topNav.js"></script>
+      	<script src="./assets/js/modeSwitcher.js"></script>
+  </body>
+</html>
+
