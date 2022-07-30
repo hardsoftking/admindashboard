@@ -56,6 +56,11 @@
   background: rgba(0,0,0,0.05);
 }
 
+.sidebar_svg-icon{
+  width: 1.1em;
+  height: 1.1em;
+  filter: invert(50%) sepia(7%) saturate(591%) hue-rotate(193deg) brightness(90%) contrast(98%); 
+}
 
 /*=== Collapse ===*/
 .collaps_c{
@@ -67,6 +72,7 @@
   padding: 4px 3px;
   color: gray;
   font-size: 1.1em;
+  align-items: center;
 }
 
 .collaps_link:hover{
@@ -99,6 +105,7 @@
 .collaps_submenu{
   color: gray;
   font-size: 1.1em;
+  align-items: center;
 }
 .collaps-submenu_link{
   margin-left: 1.2em;
@@ -129,4 +136,3 @@ a}
 .notRotate{
   transform: rotate(0deg) !important;
 }
-
