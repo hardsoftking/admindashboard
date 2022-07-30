@@ -81,4 +81,4 @@ notRotate.addEventListener("click",()=>{
   console.log("not rotate ")
   formBadge.classList.add("notRotate")
 })
-
+ 
