@@ -55,9 +55,10 @@
   background: rgba(0,0,0,0.05);
 }
 
-.sidebar_svg-icon{
-  width: 1.1em;
-  height: 1.1em;
+.sidebar_img-icon{
+  width: 1.2em;
+  height: 1.2em;
+  /*font-size: 14px;*/
   filter: invert(50%) sepia(7%) saturate(591%) hue-rotate(193deg) brightness(90%) contrast(98%); 
 }
 
@@ -76,6 +77,7 @@
 
 .collaps_link:hover{
   background: rgba(0,0,0,0.05);
+  color: var(--first-color);
 }
 
 .collaps_menu{
@@ -138,6 +140,6 @@
 
 
 /*--- active link --*/
-.activeLink{
-  color: #5D69F9 !important;
+.active{
+  color: var(--first-color) !important;
 }

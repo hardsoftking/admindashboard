@@ -24,6 +24,9 @@ import removeLeftnav() from "./leftsideMenu.js"
   let searchIcon = document.body.querySelector(".searchIcon");
   let searchBox = document.body.querySelector(".searchBox");
 
+
+
+
   /*===== function for Toggle Search =====*/
     function handleSearch(targetIcon,targetElem,targetClass){
       targetIcon.addEventListener("click",()=>{
@@ -32,6 +35,8 @@ import removeLeftnav() from "./leftsideMenu.js"
         removeFlagBox()
         removeProfileBox()
         removeSettingBox()
+         
+        console.log("clicked searcBox")
         
         targetElem.classList.toggle(`${targetClass}`)
       })
@@ -129,13 +134,17 @@ import removeLeftnav() from "./leftsideMenu.js"
         removeNotification()
         
         targetElem.classList.toggle(`${targetClass}`)
-      })
+      },false)
     }
     handleSettingBox(settingIcon,settingBox,"activeSettingBox")
+    
+    let settingLeft = document.body.querySelector(".setting_left")
+    settingLeft.addEventListener("click", removeSettingBox,false)
     
     function removeSettingBox(){
       settingBox.classList.remove("activeSettingBox")
     }
+    
    /*close notiBox when click inside the main-container*/ 
     closeBox(settingBox,"activeSettingBox")
     

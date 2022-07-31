@@ -11,6 +11,7 @@ let leftsideMenu =document.body.querySelector(".left-navbar");
 btn_menuBar.addEventListener("click", ()=>{
   removeSearch()
   removeNotification()
+  console.log("left click")
   leftsideMenu.classList.toggle("show_left-navbar")
 })
 
@@ -27,8 +28,8 @@ mainContainer.addEventListener("click", ()=>{
 /*===== LINK ACTIVE  =====*/ 
 const linkColor = document.querySelectorAll('.a-link')
 function colorLink(){
-  linkColor.forEach(l=> l.classList.remove('activeLink'))
-  this.classList.add('activeLink')
+  linkColor.forEach(l=> l.classList.remove('active'))
+  this.classList.add('active')
 }
 linkColor.forEach(l=> l.addEventListener('click', colorLink))
 

@@ -10,14 +10,14 @@
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/header.css">
     <link rel="stylesheet" href="./assets/css/leftsideMenu.css">
-  <!--  <link rel="stylesheet" href="./assets/css/modeSwitcher.css"> -->
+    <link rel="stylesheet" href="./assets/css/modeSwitcher.css">
     
-    <!--💥💥💥💥 font-awesome cdn link 💥💥💥-->
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
-    <!--💥💥💥💥 font-awesome cdn link 💥💥💥-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
    	<script data="./assets/js/bootstrap.bundle.min.js"></script>
-   
+   	
+   	
+   	
   </head>
   <body id="body">
     <!---👇 Start Header Section --->
@@ -69,12 +69,12 @@
               <!-- User details👇 --->
              <div class="menue-header_user-profile text-center mt-3 ">
                  <div class="">
-                   <img width="70" height="70" class=" rounded-circle" src="./assets/img/user/avatar-1.jpg" alt="julia hudda"/>
+                   <img width="70" height="70" class=" rounded-circle" data="./assets/img/user/avatar-1.jpg" alt="julia hudda"/>
                  </div>
                  <div class="my-2">
                    <h4 class="fs-6 ">Julia Hudda</h3>
                    <span class="text-muted fw-light">
-                      <i class=" text-success fa-solid fa-circle-dot"></i>
+                      <i class="fa-solid fa-circle-dot"></i>
                       Online
                     </span>
                   </div>
@@ -88,7 +88,7 @@
                 <!-- Start link 1 --->
                   <div class="left-nav_link d-flex justify-content-between a-link ">
                      <div class=" d-flex align-items-center">
-                       <img class="sidebar_img-icon" src="../assets/img/icon-png/dashboard-line.png" alt=""/>
+                       <i class="fa-solid fa-objects-column"></i>
                        <span class="mx-2">Dashboard</span>
                      </div>
                      <div class="badge bg-success text-light opacity-75 fw-extrabold rounded-circle">3</div>
@@ -121,7 +121,7 @@
                   <div class="collaps_c ">
                     <div class="d-flex justify-content-between collaps_link a-link">
                      <div class="d-flex align-items-center ">
-                        <img class="sidebar_img-icon" src="../assets/img/icon-png/layout-line1.png" alt=""/>
+                       <i class="fa-solid fa-table-layout"></i>
                         <span class="mx-2">Layouts</span>
                       </div>
                       <i class="fa-solid fa-chevron-down"></i>
@@ -183,7 +183,7 @@
                   <div class="collaps_c">
                     <div class="d-flex justify-content-between collaps_link a-link">
                       <div class="d-flex align-items-center ">
-                        <img class="sidebar_img-icon" src="../assets/img/icon-png/profile-line.png" alt=""/>
+                        <i class="fa-solid fa-table-tree"></i>
                         <span class="mx-2">Utility</span>
                       </div>
                       <i class="fa-solid fa-chevron-down"></i>
@@ -390,8 +390,8 @@
             
                <!-- Start Notification Body card 1-->
                <div class="notiBox_body_card">
-                 <div class="notiBox_body_card_img-icon">
-                   <img src="../assets/img/icon-png/shopping-cart-2-line.png" alt=""/>
+                 <div class="shopping_cart_svg">
+                   <i class="fa-solid fa-cart-shopping-fast"></i>
                  </div>
                  <!-- Start Notification body card right content-->
                  <div class="notiBox_body_card_right-content">
@@ -428,7 +428,7 @@
                
                <!-- Start Notification Body card 3-->
                <div class="notiBox_body_card">
-                 <div class="checkbox_icon">
+                 <div class="checkbox_svg">
                    <i class="fa-solid fa-circle-check"></i>
                  </div>
                  <!-- Start Notification body card right content-->
@@ -440,7 +440,7 @@
                      If several language coalesce the grammar
                    </div>
                    <div class="notiBox_body_card_right-content_createdAt">
-                      <i class="fa-solid fa-clock"></i>
+                     
                       <span> 3 min ago</span>
                    </div>
                  </div><!-- end noti card right content-->
@@ -448,7 +448,7 @@
                
                <!-- Start Notification Body card 4-->
                <div class="notiBox_body_card">
-                 <img class="notiBox_body_card_img" src="../assets/img/user/avatar-4.jpg" alt="user"/>
+                 <object type="image/svg+xml" class="notiBox_body_card_img" data="../assets/img/user/avatar-4.jpg" alt="user"> svg </object>
                  <!-- Start Notification body card right content-->
                  <div class="notiBox_body_card_right-content">
                    <h4 class="notiBox_body_card_right-content_title">
@@ -506,20 +506,20 @@
         <div class="profileBox iconBox_common-style">
           <!-- Profile Item_1 -->
           <div class="profile-item">
-            <i class=" fa-solid fa-user"></i>
+            <i class="profile-item_img fa-solid fa-user"></i>
             <span class="profile-item_name">Profile</span>
           </div>
           
           <!-- Profile Item_2 -->
           <div class="profile-item">
-            <i class=" fa-solid fa-wallet"></i>
+            <i class="profile-item_img fa-solid fa-wallet"></i>
             <span class="profile-item_name">My Wallet</span>
           </div>
           
           <!-- Profile Item_3 -->
           <div class="profile-item align-items-center justify-content-between">
             <div class="d-flex"> 
-              <i class=" fa-solid fa-gear"></i>
+              <i class="profile-item_img fa-solid fa-gear"></i>
               <span class="profile-item_name">Settings</span>
             </div>
             <div class="badge badge_green">
@@ -529,7 +529,7 @@
           
           <!-- Profile Item_4 -->
           <div class="profile-item">
-            <img class="profile-item_img" src="../assets/img/icon-png/lock-2-line.png"/>
+            <i class="profile-item_img fa-solid fa-lock-keyhole"></i>
             <span class="profile-item_name">Lock Screen</span>
           </div><!--end profile item-4-->
           
@@ -544,7 +544,7 @@
        <!-- === End UserProfile Box👆 ===-->
       
        <!-- ===👇👇👇 Start RightSidebar / SettingBox 👇👇👇===--> 
-        <div class="right-sidebar_overlay setting-container">
+        <div class="right-sidebar_overlay setting-container" onclick="removeSettingBox()">
           <div class="setting_left float-start">
           </div>
           <!--setting right container -->
@@ -628,12 +628,12 @@
                </div>
                <h4 class="total-sales fw-normal">1452</h4>
                <div class="card_footer d-flex align-items-center">
-                 <p class="text-muted mb-0"> <span class="arrowIcon fw-normal me-2 ">   <img class="card-arrow-up_img-icon" src="../assets/img/icon-png/arrow-right-up-line.png"/> 9.23% </span> from previous period
+                 <p class="text-muted mb-0"> <span class="arrowIcon fw-normal me-2 ">    <i class="card-arrow-up_svg-icon fa-solid fa-arrow-up-right"></i> 9.23% </span> from previous period
                  </p>
                </div>             
              </div>
-             <div class="card-1_rightside-img-icon ">
-                <img src="../assets/img/icon-png/shopping-cart-2-line.png" alt="shopping_cart"/>
+             <div class="card-1_rightside-icon ">
+                <i class="fa-solid fa-cart-shopping-fast"></i>
              </div>
            </div>
           <!------End Card_1 👆 ------>
@@ -645,8 +645,7 @@
                </div>
                <h4 class="new-orders fw-normal">938</h4>
                <div class="card_footer d-flex align-items-center">
-                 <p class="text-muted mb-0"> <span class="arrowIcon text-danger fw-normal me-2 "> <img class="card-arrow-down_img-icon" src="../assets/img/icon-png/arrow-right-down-line.png"/> 1.09% </span> from previous period
-                 </p>
+                 <p class="text-muted mb-0"> <span class="arrowIcon text-danger fw-normal me-2 "> <i class="fa-solid fa-arrow-down-right"></i> 1.09% </span> from previous period</p>
                </div>
              </div>
              <div class="card-2_rightside-icon ">
@@ -664,8 +663,7 @@
                </div>
                <h4 class="new-users fw-normal">8246</h4>
                <div class="card_footer d-flex align-items-center">
-                 <p class="text-muted mb-0"> <span class="arrowIcon fw-normal me-2"> <img class="card-arrow-up_img-icon" src="../assets/img/icon-png/arrow-right-up-line.png"/> 16.2% </span> from previous period
-                 </p>
+                 <p class="text-muted mb-0"> <span class="arrowIcon fw-normal me-2 ">   <i class="card-arrow-up_svg-icon fa-solid fa-arrow-up-right"></i> 16.2% </span> from previous period</p>
                </div>
              </div>
              <div class="card-3_rightside-icon ">
@@ -682,8 +680,7 @@
                </div>
                <h4 class="unique-visitors fw-normal">29670</h4>
                <div class="card_footer d-flex align-items-center">
-                 <p class="text-muted mb-0"> <span class=" fw-normal me-2 "> <img class="card-arrow-up_img-icon" src="../assets/img/icon-png/arrow-right-up-line.png"/>  11.7% </span> from previous period
-                 </p>
+                 <p class="text-muted mb-0"> <span class=" fw-normal me-2 ">  <i class="card-arrow-up_svg-icon fa-solid fa-arrow-up-right"></i> 11.7% </span> from previous period</p>
                </div>
              </div>
              <div class="card-4_rightside-icon ">
@@ -731,10 +728,10 @@
       
    <!---👇 Javascript files links --->
       
-      	<script src="./assets/js/script.js"></script>
+      	<script src="./assets/js/index.js"></script>
       	<script src="./assets/js/leftSideMenu.js"></script>
       	<script src="./assets/js/topNav.js"></script>
-      <!--	<script src="./assets/js/modeSwitcher.js"></script>-->
+      	<script src="./assets/js/modeSwitcher.js"></script>
   </body>
 </html>
 

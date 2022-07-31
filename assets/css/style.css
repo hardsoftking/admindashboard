@@ -85,21 +85,21 @@ a{
   color: var(--light-green);
 }
 
-.card-arrow-up_svg-icon,
-.card-arrow-down_svg-icon{
+.card-arrow-up_img-icon,
+.card-arrow-down_img-icon{
   width: 1.2em;
   height: 1.4em;
 }
 
-.card-arrow-up_svg-icon{
+.card-arrow-up_img-icon{
   filter: invert(54%) sepia(45%) saturate(754%) hue-rotate(87deg) brightness(97%) contrast(88%);
 }
-.card-arrow-down_svg-icon{
+.card-arrow-down_img-icon{
   filter: invert(19%) sepia(100%) saturate(6251%) hue-rotate(356deg) brightness(103%) contrast(109%);
 }
 
 
-.card-1_rightside-icon,
+.card-1_rightside-img-icon,
 .card-2_rightside-icon,
 .card-3_rightside-icon,
 .card-4_rightside-icon{
@@ -107,16 +107,23 @@ a{
   background: #E0E3F5;
 }
 
-.card-1_rightside-icon img, 
-.card-3_rightside-icon img{
-  padding: 0.6em;
+.card-1_rightside-img-icon img{
+  padding: 0.6em 0.7em;
   filter: invert(46%) sepia(78%) saturate(2140%) hue-rotate(193deg) brightness(95%) contrast(115%);
   
 }
-.card-2_rightside-icon img, 
-.card-4_rightside-icon img{
-  padding: 0.6em;
-  filter: invert(63%) sepia(52%) saturate(7347%) hue-rotate(111deg) brightness(98%) contrast(91%);;
+.card-3_rightside-icon i{
+  padding: 0.6em 0.8em;
+  font-size: 1.5em;
+  color: #3F98F4;
+}
+
+.card-2_rightside-icon i, 
+.card-4_rightside-icon i{
+  padding: 0.6em 0.8em;
+  font-size: 1.6em;
+  color:  var(--light-green);
+  
 }
 
 
