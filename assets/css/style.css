@@ -59,12 +59,12 @@ a{
   padding: 7em 0em;
   height: 100%;
   width: 97%;
-  max-width: 990px;
+  max-width: 900px;
   
 }
 
 
-/*---- Dashboard-cards styles---*/
+/*----💥💥💥💥 Dashboard-cards styles---*/
 .dashboard_cards-container{
  
 }
@@ -79,27 +79,37 @@ a{
 
 .card_footer{
   font-size: 12px;
+  
 }
 
+.card_footer p{
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
 .card_footer p span{
-  color: var(--light-green);
+  display: flex;
+  align-items: center;
+  color: var(--light-green) !important;
 }
 
-.card-arrow-up_img-icon,
-.card-arrow-down_img-icon{
+.card-arrow-up_svg-icon,
+.card-arrow-down_svg-icon{
+  margin-right: 2px;
   width: 1.2em;
-  height: 1.4em;
+  height: 1.2em;
 }
 
-.card-arrow-up_img-icon{
+.card-arrow-up_svg-icon{
+   
   filter: invert(54%) sepia(45%) saturate(754%) hue-rotate(87deg) brightness(97%) contrast(88%);
 }
-.card-arrow-down_img-icon{
+.card-arrow-down_svg-icon {
   filter: invert(19%) sepia(100%) saturate(6251%) hue-rotate(356deg) brightness(103%) contrast(109%);
 }
 
 
-.card-1_rightside-img-icon,
+.card-1_rightside-svg-icon,
 .card-2_rightside-icon,
 .card-3_rightside-icon,
 .card-4_rightside-icon{
@@ -107,7 +117,7 @@ a{
   background: #E0E3F5;
 }
 
-.card-1_rightside-img-icon img{
+.card-1_rightside-svg-icon object{
   padding: 0.6em 0.7em;
   filter: invert(46%) sepia(78%) saturate(2140%) hue-rotate(193deg) brightness(95%) contrast(115%);
   
