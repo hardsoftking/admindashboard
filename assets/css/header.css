@@ -32,15 +32,22 @@
   
 }
 
-.topnav_svg-icon{
+.logo .logo-big{
+  display: none;
+}
+
+/*.topnav_svg-icon{
   filter: invert(94%) sepia(5%) saturate(439%) hue-rotate(199deg) brightness(98%) contrast(94%);
 }
+*/
 
 .btn_open-leftside-menu{
   border: none;
   background: none;
 }
-
+.desktopMode_menuButton{
+  display: none;
+}
 
 /*=== IconBox's common style ===*/
 .iconBox_common-style{
@@ -59,8 +66,13 @@
   display: none;
   padding-bottom: 3em;
   border-radius: 4px;
+  transition: 0.1s;
   box-shadow: 0px 2px 5px rgba(0,0,0,0.09);
 }
+.activeSearch{
+  display: flex;
+}
+
 .searchBox .searchInput{
   height: 3em;
   width: 90%;
@@ -76,9 +88,7 @@
 .btn-submit-searchInput img{
   filter: invert(94%) sepia(87%) saturate(506%) hue-rotate(180deg) brightness(100%) contrast(96%);
 }
-.activeSearch{
-  display: flex;
-}
+
 
 /*==== Flag Icon and box style ====*/
 .flagBox{
@@ -412,10 +422,31 @@ input:checked + .slider:before {
 
 
 
-
 /*==== responsive design ====*/
 @media(min-width:768px){
-  
+.logo .logo-small{
+  display: none;
+}
+.logo .logo-big{
+  display: block;
+}
+ /*--hide smal-width menuButton--*/
+.btn_open-leftside-menu, .openMenu{
+  display: none;
+}
+ /*--show desktop mode menuButton--*/
+.desktopMode_menuButton{
+  display: block;
+  margin-left: 1em;
+ }
+ .desktopMode_menuButton i{
+  color: #fff !important;
+  font-size: 2em;
+ }
+.desktopMode_menuButton:hover{
+  background: var(--hover-bg-icon);
+}
+
   /*======= SearchBox ,notificationBox,FlagBox, ProfileBox, SettingBox ========*/
    .searchBox,
    .notificationBox{
@@ -430,9 +461,9 @@ input:checked + .slider:before {
   .notificationBox{
     margin-right: 9.5em;
   }
-  .notiBox_body_card_img-icon,
+  .notiBox_body_card_svg-icon,
   .checkbox_icon{
-   width: 3.6em;
+   width: 4.5em;
    height: ;
   }
 
@@ -445,4 +476,8 @@ input:checked + .slider:before {
   width: 13em;
   right: 0;
   margin-right: 5em;
+}
+
+
+
 }

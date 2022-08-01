@@ -1,16 +1,19 @@
 /*=== 
 import removeSearch() from "./topNav.js"
 import removeNotification from "./topNav.js"
+import removeProfileBox from "./topNav.js"
 ===*/
 
-let mainContainer = document.body.querySelector("#main-container");
+const mainContainer = document.body.querySelector("#main-container");
 let btn_menuBar = document.body.querySelector(".openMenu");
 let leftsideMenu =document.body.querySelector(".left-navbar");
+
 
 /*=== Toggle Leftside menu ===*/
 btn_menuBar.addEventListener("click", ()=>{
   removeSearch()
   removeNotification()
+  removeProfileBox()
   console.log("left click")
   leftsideMenu.classList.toggle("show_left-navbar")
 })
@@ -83,3 +86,26 @@ notRotate.addEventListener("click",()=>{
   formBadge.classList.add("notRotate")
 })
 
+
+
+//*=== 💥💥💥 Desktop mode left menu and main container toggle functionality ===
+  //== mainContainer declared on the top 
+  //== leftsideMenu declared on the topNav 
+  //=== Left sidebar toggle button
+ let toggleDesktopmode_leftside = document.body.querySelector(".desktopMode_menuButton");
+ //=== footer 
+ let footer = document.body.querySelector(".footer");
+
+ 
+   toggleDesktopmode_leftside.addEventListener("click",()=>{
+     //left sidebar
+      leftsideMenu.classList.toggle("removeLeftsideDesktopMode")
+   
+     //mainContainer
+       mainContainer.classList.toggle("removeMainContainer_DesktopMode")
+       
+     //footer
+      footer.classList.toggle("activeFooter_desktopMode")
+     
+   })
+ 

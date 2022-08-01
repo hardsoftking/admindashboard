@@ -22,14 +22,22 @@
   <body id="body">
     <!---👇 Start Header Section --->
      <header id="header" class="">
-      <nav class="top-nav py-2 py-md-3 px-2 px-md-5 d-flex align-items-center justify-content-between"> 
+      <nav class="top-nav py-2 py-md-3 px-2 px-md-3 d-flex align-items-center justify-content-between"> 
         <div class="d-flex gap-4 align-items-center justify-content-center">
+          <!-- logo 💥💥-->
            <div class="logo">
-             <img class="" src="./assets/img/logo/logo-sm.png"/>
+             <img class="logo-big" src="./assets/img/logo/logo-dark.png"/>
+             <img class="logo-small" src="./assets/img/logo/logo-sm.png"/>
            </div>
-           <button class="btn_open-leftside-menu openMenu cmn-top-nav_icon d-flex text-light">
+           <!--💥 small device mode leftsideOpen button-->
+           <button class="d-md-none btn_open-leftside-menu openMenu cmn-top-nav_icon d-flex text-light">
              <i class="fa-solid fa-bars"></i>
            </button>
+          <!--💥 desktop mode leftsideOpen button-->
+           <div class="desktopMode_menuButton">
+              <i class="fa-solid fa-bars"></i>
+           </div>
+          <!--💥 desktop mode leftsideOpen button-->
         </div>
         <div class="topnav-right d-flex align-items-center text-light gap-3 pe-2">
           <!--=== Search icon ===-->
@@ -88,8 +96,8 @@
                 <!-- Start link 1 --->
                   <div class="left-nav_link d-flex justify-content-between a-link ">
                      <div class=" d-flex align-items-center">
-                       <!-- <img class="sidebar_img-icon" src="../assets/img/icon-png/dashboard-line.png" alt=""/> -->
-                       <object class="left-sidebar_svg-icon" type="image/svg+xml" data="../assets/img/sidebar-icons/dashboard-line.svg"> svg </object>
+                       <!-- <img class="sidebar_img-icon" src="./assets/img/icon-png/dashboard-line.png" alt=""/> -->
+                       <object class="left-sidebar_svg-icon" type="image/svg+xml" data="./assets/img/sidebar-icons/dashboard-line.svg"> svg </object>
                        <span class="mx-2">Dashboard</span>
                      </div>
                      <div class="badge bg-success text-light opacity-75 fw-extrabold rounded-circle">3</div>
@@ -122,8 +130,8 @@
                   <div class="collaps_c ">
                     <div class="d-flex justify-content-between collaps_link a-link">
                      <div class="d-flex align-items-center ">
-                       <!-- <img class="sidebar_img-icon" src="../assets/img/icon-png/layout-line1.png" alt=""/>-->
-                        <object type="image/svg+xml" class="left-sidebar_svg-icon" data="../assets/img/sidebar-icons/layout-line.svg"> svg </object>
+                       <!-- <img class="sidebar_img-icon" src="./assets/img/icon-png/layout-line1.png" alt=""/>-->
+                        <object type="image/svg+xml" class="left-sidebar_svg-icon" data="./assets/img/sidebar-icons/layout-line.svg"> svg </object>
                         <span class="mx-2">Layouts</span>
                       </div>
                       <i class="fa-solid fa-chevron-down"></i>
@@ -185,8 +193,8 @@
                   <div class="collaps_c">
                     <div class="d-flex justify-content-between collaps_link a-link">
                       <div class="d-flex align-items-center ">
-                      <!--  <img class="sidebar_img-icon" src="../assets/img/icon-png/profile-line.png" alt=""/>-->
-                        <object type="image/svg+xml" class="left-sidebar_svg-icon" data="../assets/img/sidebar-icons/profile-line.svg"> svg </object>
+                      <!--  <img class="sidebar_img-icon" src="./assets/img/icon-png/profile-line.png" alt=""/>-->
+                        <object type="image/svg+xml" class="left-sidebar_svg-icon" data="./assets/img/sidebar-icons/profile-line.svg"> svg </object>
                         <span class="mx-2">Utility</span>
                       </div>
                       <i class="fa-solid fa-chevron-down"></i>
@@ -394,8 +402,8 @@
                <!-- Start Notification Body card 1-->
                <div class="notiBox_body_card">
                  <div class="notiBox_body_card_svg-icon">
-                  <!-- <img src="../assets/img/icon-png/shopping-cart-2-line.png" alt=""/>-->
-                  <object type="image/svg+xml"  data="../assets/img/dashboard-card/shopping-cart-2-line.svg"> svg </object>
+                  <!-- <img src="./assets/img/icon-png/shopping-cart-2-line.png" alt=""/>-->
+                  <object type="image/svg+xml"  data="./assets/img/dashboard-card/shopping-cart-2-line.svg"> svg </object>
                    
                  </div>
                  <!-- Start Notification body card right content-->
@@ -415,7 +423,7 @@
                
                <!-- Start Notification Body card 2-->
                <div class="notiBox_body_card">
-                 <img class="notiBox_body_card_img" src="../assets/img/user/avatar-3.jpg" alt=""/>
+                 <img class="notiBox_body_card_img" src="./assets/img/user/avatar-3.jpg" alt=""/>
                  <!-- Start Notification body card right content-->
                  <div class="notiBox_body_card_right-content">
                    <h4 class="notiBox_body_card_right-content_title">
@@ -453,7 +461,7 @@
                
                <!-- Start Notification Body card 4-->
                <div class="notiBox_body_card">
-                 <img class="notiBox_body_card_img" src="../assets/img/user/avatar-4.jpg" alt="user"/>
+                 <img class="notiBox_body_card_img" src="./assets/img/user/avatar-4.jpg" alt="user"/>
                  <!-- Start Notification body card right content-->
                  <div class="notiBox_body_card_right-content">
                    <h4 class="notiBox_body_card_right-content_title">
@@ -483,25 +491,25 @@
         <div class="flagBox">
           <!-- === Flag item_1 ===--> 
           <div class="flag_item">
-            <img class="flag-item_img" src="../assets/img/flag/spain.jpg" alt="Spanish"/>
+            <img class="flag-item_img" src="./assets/img/flag/spain.jpg" alt="Spanish"/>
             <span class="flag-item_name">Spain</span>
           </div>
           
           <!-- === Flag item_2 ===--> 
           <div class="flag_item">
-            <img class="flag-item_img" src="../assets/img/flag/germany.jpg " alt="Germany"/>
+            <img class="flag-item_img" src="./assets/img/flag/germany.jpg " alt="Germany"/>
             <span class="flag-item_name"> Germany </span>
           </div>
           
           <!-- === Flag item_3 ===--> 
           <div class="flag_item">
-            <img class="flag-item_img" src="../assets/img/flag/italy.jpg " alt="Italy"/>
+            <img class="flag-item_img" src="./assets/img/flag/italy.jpg " alt="Italy"/>
             <span class="flag-item_name"> Italy </span>
           </div> <!-- End flag item_3-->
           
           <!-- === Flag item_4 ===--> 
           <div class="flag_item">
-            <img class="flag-item_img" src="../assets/img/flag/russia.jpg " alt="Russia"/>
+            <img class="flag-item_img" src="./assets/img/flag/russia.jpg " alt="Russia"/>
             <span class="flag-item_name">Russia </span>
           </div> <!-- End flag item_4-->
         </div>
@@ -534,8 +542,8 @@
           
           <!-- Profile Item_4 -->
           <div class="profile-item">
-            <!-- <img class="profile-item_img" src="../assets/img/icon-png/lock-2-line.png"/>-->
-             <object type="image/svg+xml" class="profile-item_svg-icon" data="../assets/img/lock-unlock-line.svg"> svg </object>
+            <!-- <img class="profile-item_img" src="./assets/img/icon-png/lock-2-line.png"/>-->
+             <object type="image/svg+xml" class="profile-item_svg-icon" data="./assets/img/lock-unlock-line.svg"> svg </object>
             <span class="profile-item_name">Lock Screen</span>
           </div><!--end profile item-4-->
           
@@ -568,7 +576,7 @@
                </div>
               <!-- Start setting item 1-->
               <div class="setting-body_item">
-                <img class="setting-body_item_img" src="../assets/img/layouts/layout-1.jpg" alt="light-mode"/>
+                <img class="setting-body_item_img" src="./assets/img/layouts/layout-1.jpg" alt="light-mode"/>
                 <div class="setting-body_item_footer">
                    <label class="switch">
                       <input type="checkbox">
@@ -580,7 +588,7 @@
               
               <!-- Start setting item 2-->
               <div class="setting-body_item">
-                <img class="setting-body_item_img" src="../assets/img/layouts/layout-2.jpg" alt="light-mode"/>
+                <img class="setting-body_item_img" src="./assets/img/layouts/layout-2.jpg" alt="light-mode"/>
                 <div class="setting-body_item_footer darkMode">
                    <label class="switch ">
                       <input type="checkbox">
@@ -592,7 +600,7 @@
            
               <!-- Start setting item 3-->
               <div class="setting-body_item">
-                <img class="setting-body_item_img" src="../assets/img/layouts/layout-3.jpg" alt="light-mode"/>
+                <img class="setting-body_item_img" src="./assets/img/layouts/layout-3.jpg" alt="light-mode"/>
                 <div class="setting-body_item_footer">
                    <label class="switch">
                       <input type="checkbox">
@@ -634,13 +642,13 @@
                </div>
                <h4 class="total-sales fw-normal">1452</h4>
                <div class="card_footer d-flex align-items-center">
-                 <p class="text-muted mb-0"> <span class="arrowIcon fw-normal me-2 ">   <object type="image/svg+xml" class="card-arrow-up_svg-icon" data="../assets/img/dashboard-card/arrow-right-up-line.svg"> svg </object> 9.23% </span> from previous period
+                 <p class="text-muted mb-0"> <span class="arrowIcon fw-normal me-2 ">   <object type="image/svg+xml" class="card-arrow-up_svg-icon" data="./assets/img/dashboard-card/arrow-right-up-line.svg"> svg </object> 9.23% </span> from previous period
                  </p>
                </div>             
              </div>
              <div class="card-1_rightside-svg-icon ">
-                <!--<img src="../assets/img/icon-png/shopping-cart-2-line.png" alt="shopping_cart"/> -->
-                <object type="image/svg+xml" class="" data="../assets/img/dashboard-card/shopping-cart-2-line.svg"> svg </object>
+                <!--<img src="./assets/img/icon-png/shopping-cart-2-line.png" alt="shopping_cart"/> -->
+                <object type="image/svg+xml" class="" data="./assets/img/dashboard-card/shopping-cart-2-line.svg"> svg </object>
              </div>
            </div>
           <!------End Card_1 👆 ------>
@@ -652,7 +660,7 @@
                </div>
                <h4 class="new-orders fw-normal">938</h4>
                <div class="card_footer d-flex align-items-center">
-                 <p class="text-muted mb-0"> <span class="arrowIcon text-danger fw-normal me-2 "> <object type="image/svg+xml" class="card-arrow-down_svg-icon" data="../assets/img/dashboard-card/arrow-right-down-line.svg"> svg </object> 1.09% </span> from previous period
+                 <p class="text-muted mb-0"> <span class="arrowIcon text-danger fw-normal me-2 "> <object type="image/svg+xml" class="card-arrow-down_svg-icon" data="./assets/img/dashboard-card/arrow-right-down-line.svg"> svg </object> 1.09% </span> from previous period
                  </p>
                </div>
              </div>
@@ -671,7 +679,7 @@
                </div>
                <h4 class="new-users fw-normal">8246</h4>
                <div class="card_footer d-flex align-items-center">
-                 <p class="text-muted mb-0"> <span class="arrowIcon fw-normal me-2">  <object type="image/svg+xml" class="card-arrow-up_svg-icon" data="../assets/img/dashboard-card/arrow-right-up-line.svg"> svg </object> 16.2% </span> from previous period
+                 <p class="text-muted mb-0"> <span class="arrowIcon fw-normal me-2">  <object type="image/svg+xml" class="card-arrow-up_svg-icon" data="./assets/img/dashboard-card/arrow-right-up-line.svg"> svg </object> 16.2% </span> from previous period
                  </p>
                </div>
              </div>
@@ -689,7 +697,7 @@
                </div>
                <h4 class="unique-visitors fw-normal">29670</h4>
                <div class="card_footer d-flex align-items-center">
-                 <p class="text-muted mb-0"> <span class=" fw-normal me-2 "> <object type="image/svg+xml" class="card-arrow-up_svg-icon" data="../assets/img/dashboard-card/arrow-right-up-line.svg"> svg </object>  11.7% </span> from previous period
+                 <p class="text-muted mb-0"> <span class=" fw-normal me-2 "> <object type="image/svg+xml" class="card-arrow-up_svg-icon" data="./assets/img/dashboard-card/arrow-right-up-line.svg"> svg </object>  11.7% </span> from previous period
                  </p>
                </div>
              </div>
@@ -713,12 +721,11 @@
           
       <!--- 👆 End  Charts Container 👆--->
     
-    
      </section>
    <!---End Main Section 👆 --->
-   
+
    <!--- 👇 Start Footer section  --->
-     <footer class="footer bg-light w-100 p-3 d-flex justify-content-between ">
+     <footer class="footer bg-light  d-flex justify-content-between ">
        <div class="footer_leftside ">
          <span class="text-muted ">
            2022 © hardsoftking
@@ -732,7 +739,8 @@
        </div>
      </footer>
     <!--- End Footer section 👆----->
-      
+  
+
       
       
       

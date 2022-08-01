@@ -26,7 +26,6 @@
 .left-navbar{
   position: fixed;
   overflow-y: scroll;
-  left: 0;
   width: var(--nav-width);
   height: 100vh;
   background-color: var(--nav-bg-color);
@@ -34,11 +33,10 @@
   padding: 1.5rem 1.5rem 0rem;
   transition: .5s;
   z-index: var(--z-fixed);
-  display: none ;
-  
+  margin-left: -125%;
 }
 .show_left-navbar{
-  display: block;
+  margin-left: 0px;
 }
 
 .left-nav{
@@ -142,4 +140,21 @@
 /*--- active link --*/
 .active{
   color: var(--first-color) !important;
+}
+
+
+
+
+/*---💥💥💥 responsive style---*/
+@media (min-width:768px){
+.left-navbar{
+  margin-left: 0px;
+  transition: 0.2s;
+ } 
+.removeLeftsideDesktopMode{
+  margin-left: -125%;
+}
+
+
+   
 }

@@ -59,8 +59,7 @@ a{
   padding: 7em 0em;
   height: 100%;
   width: 97%;
-  max-width: 900px;
-  
+  max-width: 1400px;
 }
 
 
@@ -142,9 +141,38 @@ a{
 
 /*-----👇 Start footer section ----*/
    .footer{
-     /*position: fixed ;*/
-     bottom: ;
+     position: relative;
+     width: 100%;
+     padding:2em 0.5em;
    }
 /*----- End footer section 👆----*/
 
 
+
+/*---💥💥💥 responsive style---*/
+@media (min-width:768px){
+#main-container{
+     transition: 0.2s;
+     width:calc(100% - 24em);
+     margin-left: 23em;
+   }
+   
+.removeMainContainer_DesktopMode{
+  width: 97% !important;
+  margin-left: 0em !important;
+  margin: 1em auto !important;
+}
+
+
+.footer{
+  width: calc(100% - 21em ) !important;
+  margin-left: 21.3em;
+  padding: 2em 5.5em;
+} 
+.activeFooter_desktopMode{
+  width: 100% !important;
+  margin-left: 0px !important;
+  padding: 2em 0.5em !important;
+}
+
+}
